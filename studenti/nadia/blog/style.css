@@ -1,0 +1,255 @@
+/*body * {
+    outline: 1px solid red;
+}
+*/
+
+/* Per supportare tema chiaro / scuro */
+:root {
+    --bg-colour: rgb(248, 248, 248);
+    --text-colour: black;
+    --primary-colour: #3b3a3a;
+    --secondary-colour: rgb(234, 245, 248);
+    --accent-colour: rgb(146, 200, 215);
+    --card-colour: rgb(234, 245, 248);
+}
+
+body.dark {
+    --bg-colour: black;
+    --text-colour: rgb(234, 245, 248);
+    --primary-colour: rgb(146, 200, 215);
+    --secondary-colour: rgb(26, 32, 33);
+    --accent-colour: rgb(15, 95, 117);
+    --card-colour: rgb(41, 49, 51);
+}
+
+/* Reset di base */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-colour);
+    color: var(--text-colour);
+    font-family: 'Nunito';
+    text-align: center;
+    margin: 0;
+    padding: 0 20px;
+    overflow-x: hidden;
+    background-color: var(--bg-colour);
+    padding-top: 60px;
+    /*spazio per header fisso*/
+    /*line-height: 1.n ;    PER MODIFICARE LO SPAZIO TRA LE RIGHE*/
+}
+
+a,
+p,
+span,
+a::after {
+    color: var(--text-colour);
+}
+
+h1,
+nav a,
+nav a h1,
+h2,
+h3,
+label {
+    color: var(--primary-colour);
+}
+
+body a {
+    text-decoration: none;
+}
+
+
+body a:hover {
+    font-weight: bold;
+}
+
+body i:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    background-color: var(--secondary-colour);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+nav h1 {
+    margin: 5px;
+    color: var(--text-colour);
+}
+
+.nav-logo {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 1;
+}
+
+.nav-logo img {
+    height: 40px;
+    width: auto;
+    background-color: rgb(234, 245, 248);
+}
+
+.nav-links {
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#toggle-darkmode,
+#pubblica,
+input[type=file]::file-selector-button {
+    background-color: var(--accent-colour);
+    color: var(--text-colour);
+    border: none;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+input[type=file]::file-selector-button {
+    margin-top: 3px;
+    margin-left: 3px;
+}
+
+#toggle-darkmode:hover,
+#pubblica:hover,
+input[type=file]::file-selector-button:hover {
+    cursor: pointer;
+}
+
+input,
+textarea {
+    background-color: var(--bg-colour);
+    color: var(--text-colour);
+    border: none;
+    border-radius: 5px;
+}
+
+.sezione {
+    border: none;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.griglia {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 40px 0;
+}
+
+.card {
+    background-color: var(--card-colour);
+    border: 1px solid var(--accent-colour);
+    padding: 0.5rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    max-width: 300px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card-text {
+    max-height: 3em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: max-height 0.3s ease;
+}
+
+.card.active {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card.active .card-text {
+    max-height: 1000px;
+}
+
+.card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card.expanded {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    transform: scale(1.02);
+}
+
+img {
+    max-width: 100%;
+    border-radius: 3px;
+}
+
+.new-article {
+    display: inline-grid;
+    max-width: fit-content;
+    background-color: var(--card-colour);
+    border: 1px solid var(--accent-colour);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.checked {
+    color: orange;
+}
+
+.new-article input {
+    height: 35px;
+}
+
+.new-article textarea {
+    width: 400px;
+    height: 100px;
+}
+
+.new-article #pubblica {
+    width: 100px;
+}
+
+footer {
+    padding-bottom: 20px;
+}
+
+.delete-btn {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    transform: translateX(250px);
+    color: var(--text-colour);
+}
+
+.intestaz {
+    padding-left: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}

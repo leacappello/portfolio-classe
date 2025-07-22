@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Blog personale</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <img src="assets/Immagine1.png" alt="logo del blog" />
+                <a href="index.html">
+                    <h1>Recensioni honeste</h1>
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="galleria.html">Galleria</a>
+            </div>
+            <button id="toggle-darkmode">Cambia tema</button>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <form id="new-review">
+                <div class="new-article">
+                    <label for="title">Titolo:</label>
+                    <input id="title" type="text" placeholder="Inserisci il titolo della tua recensione" />
+                    <label for="article-body">Recensione:</label>
+                    <textarea name="article-body" id="article-body"></textarea>
+                    <span>Valutazione:</span>
+                    <div id="star-rating" class="star-rating">
+                        <span class="fa fa-star" data-value="1"></span>
+                        <span class="fa fa-star" data-value="2"></span>
+                        <span class="fa fa-star" data-value="3"></span>
+                        <span class="fa fa-star" data-value="4"></span>
+                        <span class="fa fa-star" data-value="5"></span>
+                    </div>
+                    <input type="hidden" id="selected-rating" name="rating" value="0">
+
+                    <button type="submit" id="pubblica">Pubblica</button>
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <div class="griglia">
+                <div class="card">
+                    <button class="delete-btn" id="delete"><i class="fa-solid fa-trash"></i></button>
+                    <div class="intestaz">
+                        <img src="assets/prof.jpg" alt="foto utente" style="width: 30px; border-radius: 50%;">
+                            <strong>Marco Rossi</strong>
+                    </div>
+                    <h3>Le Iene</h3>
+                    <p class="card-text">Una recensione è un testo che valuta e commenta un'opera (libri, film,
+                        spettacoli, ecc.) o un
+                        servizio, offrendo un giudizio critico e argomentato. Fornisce informazioni sull'opera, ne
+                        analizza elementi chiave e spesso cerca di influenzare l'opinione del lettore. </p>
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+                <div class="card">
+                    <button class="delete-btn" id="delete"><i class="fa-solid fa-trash"></i></button>
+                    <div class="intestaz">
+                        <img src="assets/prof.jpg" alt="foto utente" style="width: 30px; border-radius: 50%;">
+                            <strong>Marco Rossi</strong>
+                    </div>
+                    <h3>Kill Bill</h3>
+                    <p class="card-text">Una recensione è un testo che valuta e commenta un'opera (libri, film,
+                        spettacoli, ecc.) o un
+                        servizio, offrendo un giudizio critico e argomentato. Fornisce informazioni sull'opera, ne
+                        analizza elementi chiave e spesso cerca di influenzare l'opinione del lettore. </p>
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+                <div class="card">
+                    <button class="delete-btn" id="delete"><i class="fa-solid fa-trash"></i></button>
+                    <div class="intestaz">
+                        <img src="assets/prof.jpg" alt="foto utente" style="width: 30px; border-radius: 50%;">
+                            <strong>Marco Rossi</strong>
+                    </div>
+                    <h3>C'era una volta ad Holliwood</h3>
+                    <p class="card-text">Una recensione è un testo che valuta e commenta un'opera (libri, film,
+                        spettacoli, ecc.) o un
+                        servizio, offrendo un giudizio critico e argomentato. Fornisce informazioni sull'opera, ne
+                        analizza elementi chiave e spesso cerca di influenzare l'opinione del lettore. </p>
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+                <div class="card">
+                    <button class="delete-btn" id="delete"><i class="fa-solid fa-trash"></i></button>
+                    <div class="intestaz">
+                        <img src="assets/prof.jpg" alt="foto utente" style="width: 30px; border-radius: 50%;">
+                            <strong>Marco Rossi</strong>
+                    </div>
+                    <h3>Le Iene</h3>
+                    <p class="card-text">Una recensione è un testo che valuta e commenta un'opera (libri, film,
+                        spettacoli, ecc.) o un
+                        servizio, offrendo un giudizio critico e argomentato. Fornisce informazioni sull'opera, ne
+                        analizza elementi chiave e spesso cerca di influenzare l'opinione del lettore. </p>
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+                <div class="card">
+                    <button class="delete-btn" id="delete"><i class="fa-solid fa-trash"></i></button>
+                    <div class="intestaz">
+                        <img src="assets/prof.jpg" alt="foto utente" style="width: 30px; border-radius: 50%;">
+                            <strong>Marco Rossi</strong>
+                    </div>
+                    <h3>Kill Bill</h3>
+                    <p class="card-text">Una recensione è un testo che valuta e commenta un'opera (libri, film,
+                        spettacoli, ecc.) o un
+                        servizio, offrendo un giudizio critico e argomentato. Fornisce informazioni sull'opera, ne
+                        analizza elementi chiave e spesso cerca di influenzare l'opinione del lettore. </p>
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+                <div class="card">
+                    <button class="delete-btn" id="delete"><i class="fa-solid fa-trash"></i></button>
+                    <div class="intestaz">
+                        <img src="assets/prof.jpg" alt="foto utente" style="width: 30px; border-radius: 50%;">
+                            <strong>Marco Rossi</strong>
+                    </div>
+                    <h3>C'era una volta ad Holliwood</h3>
+                    <p class="card-text">Una recensione è un testo che valuta e commenta un'opera (libri, film,
+                        spettacoli, ecc.) o un
+                        servizio, offrendo un giudizio critico e argomentato. Fornisce informazioni sull'opera, ne
+                        analizza elementi chiave e spesso cerca di influenzare l'opinione del lettore. </p>
+                    <div class="star-rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+    <footer>
+        <p>&copy; 2025 Tutti i dirittiriservati
+            <i class="fa-brands fa-linkedin"></i>
+        </p>
+    </footer>
+</body>
+<script src="https://kit.fontawesome.com/9ec014e228.js" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+
+
+</html>

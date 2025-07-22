@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Blog personale</title>
+  <link rel="stylesheet" href="galleria.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="nav-logo">
+        <img src="assets/Immagine1.png" alt="logo del blog" />
+        <a href="index.html">
+          <h1>Recensioni honeste</h1>
+        </a>
+      </div>
+      <div class="nav-links">
+        <a href="galleria.html">Galleria</a>
+      </div>
+      <button id="toggle-darkmode">Cambia tema</button>
+    </nav>
+  </header>
+  <main>
+
+
+
+    <section>
+      <form id="new-moive">
+        <div class="new-card">
+          <label for="title">Titolo:</label>
+          <input id="title" type="text" placeholder="Inserisci il titolo della tua recensione" />
+          <label for="poster">Locandina:</label>
+          <input type="file" id="poster" accept="image/*" />
+          <button type="submit" id="pubblica">Pubblica</button>
+        </div>
+      </form>
+    </section>
+
+    <section>
+      <div class="griglia">
+        <div class="card">
+          <button class="delete-btn" id="delete"><i class="fa-solid fa-trash"></i></button>
+          <h3>Le Iene</h3>
+          <img src="assets/LE-IENE-300x400.webp" alt="poster le iene" />
+          <div class="star-rating">
+
+          </div>
+        </div>
+        <div class="card">
+          <button class="delete-btn" id="delete"><i class="fa-solid fa-trash"></i></button>
+          <h3>Kill Bill</h3>
+          <img src="assets/locandina-kill-bill-quentin-tarantino-uma-thurman-david-carradine-g-cat4_1.jpg"
+            alt="locandina kill bill">
+          <div class="">
+
+            <span class="heading">User Rating</span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <p>4.1 average based on 254 reviews.</p>
+            <hr style="border:3px solid #f1f1f1">
+
+            <div class="row">
+              <div class="side">
+                <div>5 star</div>
+              </div>
+              <div class="middle">
+                <div class="bar-container">
+                  <div class="bar-5"></div>
+                </div>
+              </div>
+              <div class="side right">
+                <div>150</div>
+              </div>
+              <div class="side">
+                <div>4 star</div>
+              </div>
+              <div class="middle">
+                <div class="bar-container">
+                  <div class="bar-4"></div>
+                </div>
+              </div>
+              <div class="side right">
+                <div>63</div>
+              </div>
+              <div class="side">
+                <div>3 star</div>
+              </div>
+              <div class="middle">
+                <div class="bar-container">
+                  <div class="bar-3"></div>
+                </div>
+              </div>
+              <div class="side right">
+                <div>15</div>
+              </div>
+              <div class="side">
+                <div>2 star</div>
+              </div>
+              <div class="middle">
+                <div class="bar-container">
+                  <div class="bar-2"></div>
+                </div>
+              </div>
+              <div class="side right">
+                <div>6</div>
+              </div>
+              <div class="side">
+                <div>1 star</div>
+              </div>
+              <div class="middle">
+                <div class="bar-container">
+                  <div class="bar-1"></div>
+                </div>
+              </div>
+              <div class="side right">
+                <div>20</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="card">
+          <button class="delete-btn" id="delete"><i class="fa-solid fa-trash"></i></button>
+          <h3>C'era una volta ad Holliwood</h3>
+          <img src="assets/locandina-ver.jpg" alt="locandina c'era una volta ad holliwood">
+          <p class="card-text">Una recensione è un testo che valuta e commenta un'opera (libri, film,
+            spettacoli, ecc.) o un
+            servizio, offrendo un giudizio critico e argomentato. Fornisce informazioni sull'opera, ne
+            analizza elementi chiave e spesso cerca di influenzare l'opinione del lettore. </p>
+          <div class="star-rating">
+
+          </div>
+        </div>
+        <div class="card">
+          <button class="delete-btn" id="delete"><i class="fa-solid fa-trash"></i></button>
+          <h3>Le Iene</h3>
+          <img src="assets/LE-IENE-300x400.webp" alt="poster le iene" />
+          <div class="star-rating">
+
+          </div>
+        </div>
+        <div class="card">
+          <button class="delete-btn" id="delete"><i class="fa-solid fa-trash"></i></button>
+          <h3>Kill Bill</h3>
+          <img src="assets/locandina-kill-bill-quentin-tarantino-uma-thurman-david-carradine-g-cat4_1.jpg"
+            alt="locandina kill bill">
+          <div class="star-rating">
+
+          </div>
+        </div>
+        <div class="card">
+          <button class="delete-btn" id="delete"><i class="fa-solid fa-trash"></i></button>
+          <h3>C'era una volta ad Holliwood</h3>
+          <img src="assets/locandina-ver.jpg" alt="locandina c'era una volta ad holliwood">
+          <div class="star-rating">
+
+          </div>
+
+
+        </div>
+
+    </section>
